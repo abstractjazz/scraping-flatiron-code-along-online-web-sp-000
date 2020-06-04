@@ -16,11 +16,11 @@ class Scraper
   #   course.description = post.css("p").text
   end
 
-def get_courses
+  def get_courses
 
 self.get_page.css(".post")
 
-end
+  end
 
   def make_courses
   self.get_courses.each do |post|
@@ -32,7 +32,7 @@ end
   end
 
 
-  def print_courses
+    def print_courses
     self.make_courses
     Course.all.each do |course|
       if course.title && course.title != ""
@@ -41,6 +41,4 @@ end
         puts "  Description: #{course.description}"
       end
     end
-end 
-
-Scraper.new.get_page
+end
