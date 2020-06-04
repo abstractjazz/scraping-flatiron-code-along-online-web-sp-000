@@ -42,6 +42,6 @@ self.get_page.css(".post")
       end
     end
   end
-end
+end 
 
-Scraper.new.print_courses
+Scraper.new.print_courses 
