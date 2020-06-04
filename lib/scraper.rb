@@ -31,7 +31,6 @@ end
     end
   end
 
-end
 
   def print_courses
     self.make_courses
@@ -43,3 +42,5 @@ end
       end
     end
   
+
+Scraper.new.get_page
