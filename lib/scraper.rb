@@ -41,4 +41,3 @@ self.get_page.css(".post")
         puts "  Description: #{course.description}"
       end
     end
-end
